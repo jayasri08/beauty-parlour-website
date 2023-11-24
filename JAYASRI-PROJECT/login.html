@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="signin-signup">
+           <form action="" class="signin-form"> 
+               <h2 class="title">Sign in</h2>
+               <div class="input-field">
+                 <i class="fas fa-user"></i>
+                 <input type="text" placeholder="user-name">
+               </div>
+               <div class="input-field">
+                 <i class="fas fa-lock"></i>
+                 <input type="password" placeholder="password">
+              </div>
+              <input type="submit" value="login" class="btn">
+              <p class="social-text">or sign in with social platform</p>
+              <div class="social-media">
+                <a href="#" class="social-icon">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="social-icon">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="social-icon">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+              <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2">sign up</a></p>
+           </form>
+        
+           
+           <form action="" class="signup-form">
+             <h2 class="title">Sign up</h2>
+             <div class="input-field">
+               <i class="fas fa-user"></i>
+               <input type="text" placeholder="user-name">
+              </div>
+              <div class="input-field">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="email">
+              </div>
+              <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="password">
+            </div>
+             <input type="submit" value="sign up" class="btn">
+             <p class="social-text">or sign in with social platform</p>
+             <div class="social-media">
+              <a href="#" class="social-icon">
+                 <i class="fab fa-facebook"></i>
+              </a>
+             <a href="" class="social-icon">
+                 <i class="fab fa-twitter"></i>
+             </a>
+             <a href="" class="social-icon">
+                 <i class="fab fa-google"></i>
+             </a>
+             <a href="" class="social-icon">
+                <i class="fa-brands fa-linkedin-in"></i>
+             </a>
+           </div>
+           <p class="account-text">Already have an account? <a href="#" id="sign-in-btn2">sign in</a></p>
+        </form>
+
+
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                   <h3>Member of brand</h3>
+                   <p>Welcome back guys!!beauty salons may offer skin care services performed by estheticians, including facials, exfoliating scrubs.</p>
+                     <button class="btn" id="sign-in-btn">sign in</button> 
+                </div>
+                <img src="signin.avif"  alt="image" class="image">
+            </div>
+
+            <div class="panel right-panel">
+              <div class="content">
+                 <h3>New to brand</h3>
+                 <p>Thanks for joining our sri beauty world!!we can't wait to share the best deals and tips with you.And as a 'thank you' 
+                  enjoy a soak-off the next time you drop by..</p>
+                   <button class="btn" id="sign-up-btn">sign up</button> 
+              </div>
+              <img src="signup.jfif"  alt="image" class="image">
+          </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

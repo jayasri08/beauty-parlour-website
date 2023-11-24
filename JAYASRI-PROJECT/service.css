@@ -1,0 +1,126 @@
+/*service start*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat+Alternates:wght@300;400;600;800&display=swap');
+
+:root{
+    --header-height:5rem;
+
+    --main-color:#f7e6df;
+    --first-color:#75492b;
+    --second-color:#dfd6a7;
+    --white-color:#fff;
+    --blac-color:#151515;
+
+    --font-cursive:'Great Vibes', cursive;
+    --font-body:'Montserrat Alternates', sans-serif;
+
+    --big-font-size:3rem;
+    --h1-font-sixe:2.25rem;
+    --h2-font-sixe:1.5rem;
+    --h3-font-sixe:1.25rem;
+    --normal-font-sixe:1rem;
+    --small-font-sixe:0.813rem;
+
+}
+
+
+
+.services{
+   width:100%;
+   padding:2rem 0;
+   background:linear-gradient(#F1DBBF,#F9E0BB,#DFA878);
+   border-radius: 0 300px;
+   /*background-image:url(room1.jpg) ;
+   background-repeat: no-repeat;
+   background-size: cover;*/
+ 
+}
+
+.services-content{
+    display:flex;
+    flex-wrap: wrap;
+}
+.section-title{
+    margin: 0 auto;
+    text-align: center;
+}
+.section-title h1{
+    font-family:var(--font-cursive);
+    font-size:var(--big-font-size);
+    font-weight: 400;
+    line-height: 3rem;
+    color: var(--first-color);
+}
+.section-title span{
+    font-weight: 300;
+    font-size: var(--h2-font-sixe);
+    line-height:1.5rem ;
+    color: var(--blac-color);
+}
+.services-content-descp{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    gap: 10px;
+}
+/*.section-title{
+    display: flex;
+    flex-direction: center;
+    text-align: center;
+    margin: center;
+}*/
+.services-content-descp .box{
+    padding: 20px;
+}
+.services-content-descp .box .inner img{
+    width: 150px;
+    margin-bottom: 1rem;
+}
+.services-content-descp .box .inner{
+    font-size: var(--h3-font-sixe);
+    font-weight: 800;
+    text-transform: capitalize;
+    color: var(--first-color);
+    padding:10px ;
+    position: relative;
+}
+.services-content-descp .box .inner::before,
+.services-content-descp .box .inner::after{
+   content: ''; 
+   position: absolute;
+   width: 0;
+   height: 0;
+   box-sizing: border-box;
+   transition: all 0.8s ease;
+}
+.services-content-descp .box .inner::before{
+    bottom: 0;
+    left: 0;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.services-content-descp .box .inner::after{
+    top: 0;
+    right: 0;
+    border-top: 3px solid transparent;
+    border-right: 3px solid  transparent;
+}
+.services-content-descp .box:hover .inner::before,
+.services-content-descp .box:hover .inner::after{
+    width: 100%;
+    height: 100%;
+    border-color: var(--first-color);
+}
+@media(max-width:920px){
+    .services-content-descp{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:560px){
+   .services-content-descp{
+    grid-template-columns: repeat(unset);
+   } 
+}
